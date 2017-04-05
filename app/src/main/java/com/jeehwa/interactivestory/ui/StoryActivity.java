@@ -1,9 +1,11 @@
-package com.jeehwa.interactivestory;
+package com.jeehwa.interactivestory.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+
+import com.jeehwa.interactivestory.R;
 
 public class StoryActivity extends AppCompatActivity {
 
@@ -16,7 +18,7 @@ public class StoryActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String name = intent.getStringExtra(getString(R.string.key_name));
-        if(name == null) {
+        if(name == null || name.isEmpty()) {
             name = "Friend";
         }
 
