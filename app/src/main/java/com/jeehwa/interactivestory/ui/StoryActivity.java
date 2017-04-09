@@ -6,10 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.jeehwa.interactivestory.R;
+import com.jeehwa.interactivestory.model.Page;
 
 public class StoryActivity extends AppCompatActivity {
 
     public static final String TAG = StoryActivity.class.getSimpleName();
+    private Page[] page;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

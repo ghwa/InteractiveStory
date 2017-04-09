@@ -9,6 +9,11 @@ public class Choice {
     private int imageId;
     private int nextPage;
 
+    public Choice(int imageId, int nextPage) {
+        this.imageId = imageId;
+        this.nextPage = nextPage;
+    }
+
     public int getImageId() {
         return imageId;
     }
