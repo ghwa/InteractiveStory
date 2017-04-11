@@ -25,10 +25,17 @@ public class MainActivity extends AppCompatActivity {
         mStartButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //int finalRadius  = (int) Math.hypot(mStartButton.getWidth()/2, mStartButton.getHeight()/2);
                 String name = mNameField.getText().toString();
                 startStory(name);
-            }
-        });
+
+                /*if(SDK_INT == 21) {
+                    Animator anim = ViewAnimationUtils.createCircularReveal(
+                            mStartButton, (int) mStartButton.getWidth()/2, (int) mStartButton.getHeight()/2, 0, finalRadius);
+                    anim.start();
+                }*/
+
+        }});
     }
 
     private void startStory(String name) {
